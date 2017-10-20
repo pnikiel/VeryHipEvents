@@ -7,7 +7,7 @@
 #include <atomic>
 #include <VeryHipEvents/Event.h>
 
-namespace EventRecorder
+namespace VeryHipEvents
 {
 
 

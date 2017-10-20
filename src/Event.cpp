@@ -11,7 +11,7 @@ pid_t gettid()
     return syscall( SYS_gettid );
 }
 
-namespace EventRecorder
+namespace VeryHipEvents
 {
 
     Event::Event () :

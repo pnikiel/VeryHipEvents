@@ -2,7 +2,7 @@
 #include <fstream>
 #include <VeryHipEvents/EventRecorder.h>
 
-namespace EventRecorder
+namespace VeryHipEvents
 {
 
   void Recorder::initialize (unsigned int  maxEvents, unsigned int memSize, bool initiallyEnabled)

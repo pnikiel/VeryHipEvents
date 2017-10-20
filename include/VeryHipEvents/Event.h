@@ -8,7 +8,7 @@
 #include <time.h>
 
 
-namespace EventRecorder
+namespace VeryHipEvents
 {
 
   // TODO: remove?

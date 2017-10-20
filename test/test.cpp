@@ -1,7 +1,7 @@
 #include <LogIt.h>
 #include <VeryHipEvents/EventRecorder.h>
 
-using namespace EventRecorder;
+using namespace VeryHipEvents;
 using namespace Log;
 
 class FancyEvent: public Event
