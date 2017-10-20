@@ -10,8 +10,8 @@ add_library( VeryHipEvents OBJECT
   src/Event.cpp
   )
 
-add_executable( very_hip_events_test src/test.cpp
+add_executable( very_hip_events_test test/test.cpp
   $<TARGET_OBJECTS:VeryHipEvents>
 )
-target_link_libraries( test -lrt)
+target_link_libraries( very_hip_events_test -lrt)
 

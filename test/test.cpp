@@ -1,5 +1,5 @@
 #include <LogIt.h>
-#include <EventRecorder/EventRecorder.h>
+#include <VeryHipEvents/EventRecorder.h>
 
 using namespace EventRecorder;
 using namespace Log;

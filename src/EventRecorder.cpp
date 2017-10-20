@@ -1,6 +1,6 @@
 #include <stdexcept>
 #include <fstream>
-#include <EventRecorder/EventRecorder.h>
+#include <VeryHipEvents/EventRecorder.h>
 
 namespace EventRecorder
 {

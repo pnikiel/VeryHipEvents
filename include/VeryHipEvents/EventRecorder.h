@@ -5,7 +5,7 @@
 #define __EVENTRECORDER_H__
 
 #include <atomic>
-#include <EventRecorder/Event.h>
+#include <VeryHipEvents/Event.h>
 
 namespace EventRecorder
 {
