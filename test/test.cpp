@@ -14,7 +14,6 @@ class FancyEvent: public Event
 
 int main ()
 {
-    Log::initializeLogging ();
     Recorder::initialize (4, 1E3);
     record_event<FancyEvent> ();
 
