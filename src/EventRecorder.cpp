@@ -22,8 +22,13 @@ namespace VeryHipEvents
 	unsigned int preEventNumber = m_eventsNumber.fetch_add( 1 );
 	unsigned char* preEventPtr = m_nextEvent.fetch_add ( sz );
 	
-	if ( preEventNumber >= (m_maxEvents-1) || (preEventPtr+sz-m_storage >= m_storageSize) )
+	int alreadyUsed = preEventPtr - m_storage;
+	if (alreadyUsed<0)
+	    throw std::logic_error("Sth went wrong -- pointer wrap-around?");
+
+	if ( preEventNumber >= (m_maxEvents-1) || (size_t(alreadyUsed)+sz >= m_storageSize) )
 	{
+	    // adding this event would be too much for what storage we allocated
 	    m_eventsNumber.fetch_sub(1);
 	    
 	    return 0;
